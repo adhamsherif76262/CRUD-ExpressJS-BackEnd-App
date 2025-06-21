@@ -6,10 +6,10 @@ const users = [];
 
 const cors = require("cors");
 
-App.use(cors()); // ✅ Enable CORS for all routes
+// App.use(cors()); // ✅ Enable CORS for all routes
 
 // OR more securely:
-// app.use(cors({ origin: "http://localhost:3000" }));
+App.use(cors({ origin: "https://crud-next-app.netlify.app" }));
 
 App.use(Express.json());
 
